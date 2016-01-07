@@ -53,7 +53,7 @@ sub new {
 
         _cycle => 5,               # 5 seconds...
 
-        _weather_html => "/var/www/default/html/weather/wunderground_weather_plugin.html",          # Ausgabe als HTML
+        _weather_html => "/var/www/default/htdocs/weather/wunderground_weather_plugin.html",          # Ausgabe als HTML
 
         _wunderground_ip => "http://api.wunderground.com/api/",
         _symbole         => "iconset6/",                          # Pfad zu den Wettersymbolen
@@ -78,42 +78,40 @@ sub run_PHAD_plugin {
         my $length = -4;
         my $icontoday = substr ($weather->{current_observation}->{icon_url}, 31, $length);
 
-        my $html = "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
-        <html>
-                <head>
-                        <title>Wetter</title>
-                        <meta name='language' content='de'>
-                        <meta http-equiv='content-type' content='text/html; charset=utf8'>
-                        <link href='wunderground_weather.css' rel='stylesheet' type='text/css' />
-                </head>
-                <body>
+        my $html = "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>";
+        $html = $html . "<html>";
+        $html = $html . "  <head>\n";
+        $html = $html . "    <title>Wetter</title>\n";
+        $html = $html . "    <meta name='language' content='de'>\n";
+        $html = $html . "    <meta http-equiv='content-type' content='text/html; charset=utf8'>\n";
+        $html = $html . "    <link href='wunderground_weather.css' rel='stylesheet' type='text/css' />\n";
+        $html = $html . "  </head>\n";
+        $html = $html . "  <body>\n";
 
-                <table background=\"".$self->{_symbolebg}.$icontoday."\.png\">".
-                        "<tr height=200px>\n".
-                                "<td align=center width=150x >\n".
-                                        "<strong>Aktuell</strong>\n".
-                                        "<h3>".$weather->{current_observation}->{weather}."</h3>\n".
-                                        "<h3><font color=\"FFF799\">".$weather->{current_observation}->{temp_c}." &degC</font></h3>\n".
-                                        "Gef&uuml;hlt:&nbsp;".$weather->{current_observation}->{feelslike_c}."&degC<br/>\n".
-                                        "<img width=100px height=100px src=\"".$self->{_symbole}.$weather->{current_observation}->{icon}."\.png\" alt\"".$weather->{current_observation}->{conditions}."\" />\n".
-                                "</td>\n";
+        $html = $html . "    <table background=\"".$self->{_symbolebg}.$icontoday."\.png\">\n";
+        $html = $html . "      <tr height=200px>\n";
+        $html = $html . "        <td align=center width=150x >\n";
+        $html = $html . "          <strong>Aktuell</strong>\n";
+        $html = $html . "          <h3>".$weather->{current_observation}->{weather}."</h3>\n";
+        $html = $html . "          <h3><font color=\"FFF799\">".$weather->{current_observation}->{temp_c}." &degC</font></h3>\n";
+        $html = $html . "          Gef&uuml;hlt:&nbsp;".$weather->{current_observation}->{feelslike_c}."&degC<br/>\n";
+        $html = $html . "          <img width=100px height=100px src=\"".$self->{_symbole}.$weather->{current_observation}->{icon}."\.png\" />\n";
+        $html = $html . "        </td>\n";
 
-                        for(my $j=1;$j<4;$j++) {
-                        $html = $html.
-                        "<td align=center width=150px >\n".
-                                "<strong>".$weather->{forecast}->{simpleforecast}->{forecastdays}->{forecastday}->[$j]->{date}->{weekday}."</strong>\n".
-                                "<h3>".$weather->{forecast}->{simpleforecast}->{forecastdays}->{forecastday}->[$j]->{conditions}."</h3>\n".
-                                "<h3><font color=\"FFF799\">".$weather->{forecast}->{simpleforecast}->{forecastdays}->{forecastday}->[$j]->{low}->{celsius}." &degC bis \n".$weather->{forecast}->{simpleforecast}->{forecastdays}->{forecastday}->[$j]->{high}->{celsius}." &degC</h3></font>\n".
-                                "Regen ".$weather->{forecast}->{simpleforecast}->{forecastdays}->{forecastday}->[$j]->{pop}."%\n</h3>".
-                                "<img width=100px height=100px src=\"".$self->{_symbole}.$weather->{forecast}->{simpleforecast}->{forecastdays}->{forecastday}->[$j]->{icon}."\.png\" alt=\"".
-                                        $weather->{forecast}->{simpleforecast}->{forecastdays}->{forecastday}->[$j]->{conditions}."\" />\n".
-                                "</td>\n";
-                        }
-                        $html = $html."</tr>
-                </table>
-                </body>
-        </html>";
-
+        for(my $j=1;$j<4;$j++) {
+            my $forecast = $weather->{forecast}->{simpleforecast}->{forecastdays}->{forecastday}->[$j];
+            $html = $html . "    <td align=center width=150px >\n";
+            $html = $html . "      <strong>".$forecast->{date}->{weekday}."</strong>\n";
+            $html = $html . "      <h3>".$forecast->{conditions}."</h3>\n";
+            $html = $html . "      <h3><font color=\"FFF799\">".$forecast->{low}->{celsius}." &degC bis \n".$forecast->{high}->{celsius}." &degC</h3></font>\n";
+            $html = $html . "      Regen ".$forecast->{pop}."%\n</h3>";
+            $html = $html . "      <img width=100px height=100px src=\"".$self->{_symbole}.$forecast->{icon}."\.png\" alt=\"".$forecast->{conditions}."\" />\n";
+            $html = $html . "</td>\n";
+        }
+        $html = $html . "      </tr>\n";
+        $html = $html . "    </table>\n";
+        $html = $html . "  </body>\n";
+        $html = $html . "</html>\n";
 
         my $html_datei = $self->{_weather_html};
 
