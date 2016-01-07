@@ -26,12 +26,12 @@ The author was too lazy to write a description.
 use strict;
 use warnings;
 
-use LWP::Simple;
+use LWP::Simple;
 use XML::Simple;
 use Data::Dumper;
 use Encode qw(encode decode);
 use Time::HiRes qw ( time gettimeofday );
-use PHAD::Logger;
+use PHAD::Logger;
 use PHAD::Daemon;
 
 
@@ -77,7 +77,6 @@ sub run_PHAD_plugin {
 
         my $length = -4;
         my $icontoday = substr ($weather->{current_observation}->{icon_url}, 31, $length);
-        my $location = substr ($weather->{current_observation}->{observation_time}, 5, $length);
 
         my $html = "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
         <html>
@@ -121,7 +120,8 @@ sub run_PHAD_plugin {
         open(HTML, ">:utf8", $html_datei);    # HTML Datei zum Schreiben
         print HTML $html;
         close(HTML);
-        $self->{_lastRun} = time();       }
+        $self->{_lastRun} = time();   
+    }
 }
 
 
