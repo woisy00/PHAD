@@ -72,6 +72,7 @@ sub run_PHAD_plugin {
         my $url = $self->{_wunderground_ip}.$self->{_api}."/conditions/forecast/astronomy/lang:".$self->{_lang}."/q/".$self->{_country}."\/".$self->{_city}."\.xml";
         my $xml = get($url);
         $self->{_logger}->warn("Couldn't get it!") unless defined $xml;
+        $self->{_logger}->debug("Fetched: ".$xml) if defined $xml;
         my $weather = XMLin($xml, suppressempty => '');
 
         my $length = -4;
