@@ -19,18 +19,13 @@ use strict;
 
 use FindBin;
 use lib "$FindBin::Bin/lib";  # Add /home/foo/bin/lib to search path
-#use RPC;
 
-
-use Math::Round;
-use Math::BaseCalc;
 use Getopt::Std;
-use Time::HiRes qw ( time alarm sleep usleep gettimeofday );
-getopts("dc:l:p:", \my %opts);
-
+getopts("dc:", \my %opts);
 
 use PHAD::Daemon;
 use PHAD::Logger;
+use PHAD::Config;
 
 my $logger = PHAD::Logger->new($opts{d});
 
@@ -49,16 +44,8 @@ if ($opts{c}) {
     $config = "/etc/phad/phad.conf" 
 }
 
-# config values
-my $cycle = $opts{l};
-my $plugin_path = $opts{p};
-
-
 $logger->info("Started with PID: $$ \n");
 
-$cycle=60 unless defined $cycle; # minimum cycle 30 to avoid insane settings
-$plugin_path = "$FindBin::Bin/plugins" unless defined $plugin_path;
-
-my $phad = PHAD::Daemon->new($plugin_path, $opts{d}, $cycle);
+my $phad = PHAD::Daemon->new($config, $opts{d});
 
 $phad->mainLoop();

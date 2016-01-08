@@ -49,9 +49,11 @@ Returns a new B<Device> or dies on error.
 sub new {
     my $class = shift;
     my ($address, $dptid, $writeCallback) = @_;
+    
+    my $dpt = PHAD::DPT->new($dptid);
     my $self = bless { 
         _address => $address,
-        _dpt => DPT->new($dptid),
+        _dpt => \$dpt,
         _writeCallback => $writeCallback,
         _value => undef,
         _updateListener => undef,
@@ -96,7 +98,7 @@ sub valueUpdated {
 
 sub getDPT {
     my ($self) = @_;
-    return $self->{_dpt};
+    return ${$self->{_dpt}};
 }
 
 sub getAddress {
