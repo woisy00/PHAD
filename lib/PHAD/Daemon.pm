@@ -12,11 +12,12 @@ use PHAD::RRD;
 use PHAD::Logger;
 use Module::Pluggable::Object;
 
-use Data::Dumper;
+our @ISA = qw(RPC::Lite::Server);
 
 sub new {
     my $class = shift;
     my ($config_file, $debug) = @_;
+    my $self;
     
     my $cfg = PHAD::Config->new($config_file);
     # make shure config file exists!
@@ -28,18 +29,30 @@ sub new {
     
     $cycle = 60 unless defined $cycle;
 
-    my $self  = { 
-        _logger => PHAD::Logger->new($debug),
-        _cycle => $cycle,
-        _devices => {},
-        _plugins => undef,
-        _cfg => \$cfg,
-    };
+    my %devices = ();
+    
+    $self = $class->SUPER::new({
+        Transports  => [ 'TCP:Port=10000' ],
+        Threaded    => 1,
+    });
+    
+    my $logger = PHAD::Logger->new($debug);
+    #$self->AddSignature('getValues=hash:int,int'); # signatures are optional)
+    $self->{_logger} = $logger;
+    $self->{_cycle} = $cycle;
+    $self->{_devices} = \%devices;
+    $self->{_plugins} = undef;
+    $self->{_cfg} = \$cfg;
 
     bless $self, $class;
-    
     $self->loadPlugins();
+
     return $self;
+}
+
+sub getLogger {
+    my ($self) = @_;
+    return ${$self->{_logger}};
 }
 
 sub getConfigDir {
@@ -47,19 +60,34 @@ sub getConfigDir {
     return ${$self->{_cfg}}->get('config_dir');
 }
 
+
+sub getDevice {
+    my ($self, $address) = @_;
+    return ${$self->{_devices}{$address}};
+}
+
 sub registerDevice {
     my ($self, $device) = @_;
     
     my $address = $device->getAddress();
-    my %devices = %{$self->{_devices}};
-    $devices{$address} = \$device;
+    $self->{_devices}{$address} = \$device;
     $device->setUpdateListener(sub {
-        print "Update Value: ".Dumper(\@_)."\n";
+        #print "Update Value: ".Dumper(\@_)."\n";
         my ($value) = @_;
         $self->{_logger}->info("Device ".$device->getAddress." updated to ".$device->getDPT()->decode($value)." raw (".$value.")");
     });
 }
 
+sub getValue {
+    my ($self, $address) = @_;
+    my %devices = %{$self->{_devices}};
+    return $self->getDevice($address)->getValue();
+}
+
+sub setValue {
+    my ($self, $address, $value) = @_;
+    $self->getDevice()->setValue($value);
+}
 
 sub loadPlugins {
     my $self = shift;
@@ -78,31 +106,36 @@ sub loadPlugins {
 sub mainLoop {
     my $self = shift;
     
-    while (1) {
-        $self->{_logger}->debug("Executing main loop");
+    $SIG{TERM} = sub {
+        # -> Doesn't work when blocked by I/O!!
+        #LOGGER('DEBUG',"Thread eiblisten Caught TERM, exiting:". $thr_eiblisten_cause);
+        #system ("touch $alive"); # avoid timeout for init
+        #if($eib_logging) { close FILE_EIBLOG; }
+        #$plugindb->sync(); # write out
+        #`cp $ramdisk$plugin_db_name $plugin_db_path$plugin_db_name`;
+        exit();
+    };
+    $SIG{KILL} = sub {
+        # ende aus finito
+        #LOGGER('DEBUG',"Thread eiblisten Caught KILL, exiting:" .$thr_eiblisten_cause);
+        #system ("touch $alive"); # avoid timeout for init
+        #if($eib_logging) { close FILE_EIBLOG; }
+        #$plugindb->sync(); # write out
+        #`cp $ramdisk$plugin_db_name $plugin_db_path$plugin_db_name`;
+        exit();
+    };
+    
         
-        my @loaded_plugins = @{ $self->{_plugins} };
-        foreach my $plugin (@loaded_plugins) {
-            if ($plugin->can("execute")) {
-                my $pluginName = ref $plugin;
-                $self->{_logger}->debug("Executing ".$pluginName);
-                $plugin->execute();
-            }
-            
-        }
-        
-        if ($self->{_devices}) {
-            my %devices = %{$self->{_devices}};
-            foreach my $device (values %devices) { 
-                if ($device->can("execute")) {
-                    my $deviceType = ref $device;
-                    $self->{_logger}->debug("Executing Device ".$device->getAddress." of Type ".$deviceType);
-                    $device->execute;
-                }
-            }
-        }
-        sleep $self->{_cycle};
+    $self->{_logger}->debug("Starting plugins");
+    
+    my @loaded_plugins = @{ $self->{_plugins} };
+    foreach my $plugin (@loaded_plugins) {
+        my $pluginName = ref $plugin;
+        $self->{_logger}->debug("Starting ".$pluginName);
+        $plugin->StartCycling();
     }
+    
+    $self->Loop;    
 }
 
 1;

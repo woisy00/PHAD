@@ -17,37 +17,31 @@
 
 use strict;
 
-use FindBin;
-use lib "$FindBin::Bin/lib";  # Add /home/foo/bin/lib to search path
+use CGI;
+use PHAD::Device;
+use PHAD::DPT;
 
-use Getopt::Std;
-getopts("dc:", \my %opts);
+use RPC::Lite::Client;
 
-use PHAD::Daemon;
-use PHAD::Logger;
-use PHAD::Config;
+my $q = CGI->new;
 
-use RPC::Lite::Server;
 
-my $logger = PHAD::Logger->new($opts{d});
+# Process an HTTP request
+my $session          = $q->param('s');    
+my $device_address   = $q->param('a');
+my $value            = $q->param('v');
+my $timestamp        = $q->param('ts');
 
-# Options
-while ((my $key, my $value) = each %opts) {
-    $logger->debug("opt $key = $value");
-}
 
-# Config files
-# global
-my $config;
-if ($opts{c}) {
-    $logger->info("Config-File is: $opts{c}");
-    $config = $opts{c};
-} else {
-    $config = "/etc/phad/phad.conf" 
-}
+my $client = RPC::Lite::Client->new({
+            Transport  => 'TCP:Host=localhost,Port=10000',
+            Serializer => 'JSON', # JSON is actually the default,
+                                    # this argument is unnecessary
+        });
+$client->Request('setValue', $device_address, $value);        
 
-$logger->info("Started with PID: $$ \n");
+# Prepare various HTTP responses
+print $q->header();
+print $q->header('application/json');
 
-my $phad = PHAD::Daemon->new($config, $opts{d});
-
-$phad->mainLoop();
+print '{"success":"1"}\n';
