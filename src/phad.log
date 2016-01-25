@@ -1,0 +1,562 @@
+pluginloader@3140 Error loading file .\phad.log. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+TypeError: __isPlugin() takes exactly 4 arguments (3 given)
+pluginloader@3140 Error loading file .\phad.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+TypeError: __isPlugin() takes exactly 4 arguments (3 given)
+pluginloader@2732 Error loading file .\phad.log. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 29, in load_file
+    exec(fd.read(), context)
+  File "<string>", line 1
+    pluginloader@3140 Error loading file .\phad.log. Ignored
+                ^
+SyntaxError: invalid syntax
+pluginloader@2732 Error loading file .\phad.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+TypeError: __isPlugin() takes exactly 4 arguments (3 given)
+pluginloader@4736 Error loading file .\phad.log. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 29, in load_file
+    exec(fd.read(), context)
+  File "<string>", line 1
+    pluginloader@3140 Error loading file .\phad.log. Ignored
+                ^
+SyntaxError: invalid syntax
+pluginloader@4736 Error loading file .\phad.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+TypeError: __isPlugin() takes exactly 4 arguments (3 given)
+pluginloader@5268 Error loading file .\phad.log. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 29, in load_file
+    exec(fd.read(), context)
+  File "<string>", line 1
+    pluginloader@3140 Error loading file .\phad.log. Ignored
+                ^
+SyntaxError: invalid syntax
+pluginloader@5268 Error loading file .\phad.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+TypeError: __isPlugin() takes exactly 4 arguments (3 given)
+pluginloader@3320 Error loading file .\phad.log. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 29, in load_file
+    exec(fd.read(), context)
+  File "<string>", line 1
+    pluginloader@3140 Error loading file .\phad.log. Ignored
+                ^
+SyntaxError: invalid syntax
+pluginloader@3320 Error loading file .\phad.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 43, in __isPlugin
+    return issubclass(clazz, Plugin)
+TypeError: issubclass() arg 1 must be a class
+apscheduler.scheduler@3320 Scheduler started
+apscheduler.scheduler@2532 Looking for jobs to run
+apscheduler.scheduler@2532 No jobs; waiting until a job is added
+pluginloader@3692 Error loading file .\phad.log. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 29, in load_file
+    exec(fd.read(), context)
+  File "<string>", line 1
+    pluginloader@3140 Error loading file .\phad.log. Ignored
+                ^
+SyntaxError: invalid syntax
+pluginloader@3692 Error loading file .\phad.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 43, in __isPlugin
+    def __isPlugin(self, name, clazz):
+TypeError: issubclass() arg 1 must be a class
+apscheduler.scheduler@3692 Scheduler started
+apscheduler.scheduler@1172 Looking for jobs to run
+apscheduler.scheduler@1172 No jobs; waiting until a job is added
+pluginloader@2748 Error loading file plugins\SimpleDevicePlugin.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 44, in __isPlugin
+    return isclass(clazz) and issubclass(clazz, Plugin)
+TypeError: issubclass() arg 2 must be a class or tuple of classes
+pluginloader@2748 Error loading file plugins\__init__.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 44, in __isPlugin
+    return isclass(clazz) and issubclass(clazz, Plugin)
+TypeError: issubclass() arg 2 must be a class or tuple of classes
+apscheduler.scheduler@2748 Scheduler started
+apscheduler.scheduler@3028 Looking for jobs to run
+apscheduler.scheduler@3028 No jobs; waiting until a job is added
+pluginloader@5356 Error loading file plugins\SimpleDevicePlugin.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 44, in __isPlugin
+    return isclass(clazz) and issubclass(clazz, Plugin)
+TypeError: issubclass() arg 2 must be a class or tuple of classes
+pluginloader@5356 Error loading file plugins\__init__.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 44, in __isPlugin
+    return isclass(clazz) and issubclass(clazz, Plugin)
+TypeError: issubclass() arg 2 must be a class or tuple of classes
+apscheduler.scheduler@5356 Scheduler started
+apscheduler.scheduler@5684 Looking for jobs to run
+apscheduler.scheduler@5684 No jobs; waiting until a job is added
+pluginloader@1500 Error loading file plugins\SimpleDevicePlugin.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 44, in __isPlugin
+    return isclass(clazz) and issubclass(clazz, Plugin)
+TypeError: issubclass() arg 2 must be a class or tuple of classes
+pluginloader@1500 Error loading file plugins\__init__.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 44, in __isPlugin
+    return isclass(clazz) and issubclass(clazz, Plugin)
+TypeError: issubclass() arg 2 must be a class or tuple of classes
+pluginloader@2064 Error loading file plugins\SimpleDevicePlugin.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 44, in __isPlugin
+    return isclass(clazz) and issubclass(clazz, Plugin)
+TypeError: issubclass() arg 2 must be a class or tuple of classes
+pluginloader@2064 Error loading file plugins\__init__.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 44, in __isPlugin
+    return isclass(clazz) and issubclass(clazz, Plugin)
+TypeError: issubclass() arg 2 must be a class or tuple of classes
+apscheduler.scheduler@2064 Scheduler started
+apscheduler.scheduler@5296 Looking for jobs to run
+apscheduler.scheduler@5296 No jobs; waiting until a job is added
+pluginloader@2840 Error loading file plugins\SimpleDevicePlugin.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 44, in __isPlugin
+    print ("Checking %s (%s)" % name, clazz)
+TypeError: not enough arguments for format string
+pluginloader@2840 Error loading file plugins\__init__.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 44, in __isPlugin
+    print ("Checking %s (%s)" % name, clazz)
+TypeError: not enough arguments for format string
+pluginloader@3772 Error loading file plugins\SimpleDevicePlugin.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 45, in __isPlugin
+    return isclass(clazz) and issubclass(clazz, Plugin)
+TypeError: issubclass() arg 2 must be a class or tuple of classes
+pluginloader@3772 Error loading file plugins\__init__.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 45, in __isPlugin
+    return isclass(clazz) and issubclass(clazz, Plugin)
+TypeError: issubclass() arg 2 must be a class or tuple of classes
+apscheduler.scheduler@3772 Scheduler started
+apscheduler.scheduler@4080 Looking for jobs to run
+apscheduler.scheduler@4080 No jobs; waiting until a job is added
+pluginloader@2432 Error loading file plugins\SimpleDevicePlugin.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 45, in __isPlugin
+    return isinstance(clazz, Plugin)
+TypeError: isinstance() arg 2 must be a class, type, or tuple of classes and types
+pluginloader@2432 Error loading file plugins\__init__.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 45, in __isPlugin
+    return isinstance(clazz, Plugin)
+TypeError: isinstance() arg 2 must be a class, type, or tuple of classes and types
+apscheduler.scheduler@2432 Scheduler started
+apscheduler.scheduler@5404 Looking for jobs to run
+apscheduler.scheduler@5404 No jobs; waiting until a job is added
+pluginloader@724 Error loading file plugins\SimpleDevicePlugin.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 45, in __isPlugin
+    return (not ismodule(clazz)) and isclass(clazz) and issubclass(clazz, Plugin)
+TypeError: issubclass() arg 2 must be a class or tuple of classes
+pluginloader@724 Error loading file plugins\__init__.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 45, in __isPlugin
+    return (not ismodule(clazz)) and isclass(clazz) and issubclass(clazz, Plugin)
+TypeError: issubclass() arg 2 must be a class or tuple of classes
+pluginloader@6120 Error loading file plugins\SimpleDevicePlugin.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 45, in __isPlugin
+    return issubclass(clazz, Plugin)
+TypeError: issubclass() arg 1 must be a class
+pluginloader@6120 Error loading file plugins\__init__.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 32, in load_file
+    if (self._apply_condition(onlyif, name, clazz)):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 50, in _apply_condition
+    return condition(*args, **kwargs)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Registry.py", line 45, in __isPlugin
+    return issubclass(clazz, Plugin)
+TypeError: issubclass() arg 1 must be a class
+apscheduler.scheduler@2476 Scheduler started
+apscheduler.scheduler@4208 Looking for jobs to run
+apscheduler.scheduler@4208 No jobs; waiting until a job is added
+apscheduler.scheduler@6080 Scheduler started
+apscheduler.scheduler@5340 Looking for jobs to run
+apscheduler.scheduler@5340 No jobs; waiting until a job is added
+apscheduler.scheduler@3232 Scheduler started
+apscheduler.scheduler@3504 Looking for jobs to run
+apscheduler.scheduler@3504 No jobs; waiting until a job is added
+apscheduler.scheduler@2864 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler@2864 Added job "SimpleDevicePlugins.execute" to job store "default"
+apscheduler.scheduler@2864 Scheduler started
+apscheduler.scheduler@2832 Looking for jobs to run
+apscheduler.scheduler@2832 Next wakeup is due at 2016-01-24 16:13:19.964000+01:00 (in 57.198000 seconds)
+pluginloader@3036 Error loading file plugins\SimpleDevicePlugin.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 29, in load_file
+    exec(fd.read(), context)
+  File "<string>", line 7, in <module>
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Device.py", line 7, in <module>
+    import phad.dpt.dptvalues
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\dpt\dptvalues.py", line 188, in <module>
+    dpt_1_000 = DPT_Boolean("1.000", "Generic", (0, 1))
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\dpt\dptvalues.py", line 122, in __init__
+    super(DPT, self).__init__(dptId, desc, limits, unit)
+TypeError: object.__init__() takes no parameters
+apscheduler.scheduler@3036 Scheduler started
+apscheduler.scheduler@5288 Looking for jobs to run
+apscheduler.scheduler@5288 No jobs; waiting until a job is added
+pluginloader@5716 Error loading file plugins\SimpleDevicePlugin.py. Ignored
+Traceback (most recent call last):
+  File "C:\ProgramData\Python\Python2.7.11\lib\site-packages\pluginloader\__init__.py", line 29, in load_file
+    exec(fd.read(), context)
+  File "<string>", line 7, in <module>
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\Device.py", line 7, in <module>
+    import phad.dpt.dptvalues
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\dpt\dptvalues.py", line 188, in <module>
+    dpt_1_000 = DPT_Boolean("1.000", "Generic", (0, 1))
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\dpt\dptvalues.py", line 122, in __init__
+    DPT.__init__(self, dptId, desc, limits, unit)
+  File "N:\Projekte\perl_workspace\PythonHAD\src\phad\dpt\dptvalues.py", line 48, in __init__
+    dpt_values[dptId] = self
+NameError: global name 'dpt_values' is not defined
+apscheduler.scheduler@5716 Scheduler started
+apscheduler.scheduler@1528 Looking for jobs to run
+apscheduler.scheduler@1528 No jobs; waiting until a job is added
+apscheduler.scheduler@708 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler@708 Added job "SimpleDevicePlugins.execute" to job store "default"
+apscheduler.scheduler@708 Scheduler started
+apscheduler.scheduler@4656 Looking for jobs to run
+apscheduler.scheduler@4656 Next wakeup is due at 2016-01-24 16:23:51.760000+01:00 (in 59.994000 seconds)
+apscheduler.scheduler@4840 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler@4840 Added job "SimpleDevicePlugins.execute" to job store "default"
+apscheduler.scheduler@4840 Scheduler started
+apscheduler.scheduler@2664 Looking for jobs to run
+apscheduler.scheduler@2664 Next wakeup is due at 2016-01-24 16:25:34.710000+01:00 (in 59.994000 seconds)
+apscheduler.scheduler@2664 Looking for jobs to run
+apscheduler.executors.default@5524 Running job "SimpleDevicePlugins.execute (trigger: interval[0:01:00], next run at: 2016-01-24 16:26:34 CET)" (scheduled at 2016-01-24 16:25:34.710000+01:00)
+apscheduler.scheduler@2664 Next wakeup is due at 2016-01-24 16:26:34.710000+01:00 (in 60.000000 seconds)
+apscheduler.executors.default@5524 Job "SimpleDevicePlugins.execute (trigger: interval[0:01:00], next run at: 2016-01-24 16:26:34 CET)" executed successfully
+apscheduler.scheduler@2664 Looking for jobs to run
+apscheduler.executors.default@5524 Running job "SimpleDevicePlugins.execute (trigger: interval[0:01:00], next run at: 2016-01-24 16:27:34 CET)" (scheduled at 2016-01-24 16:26:34.710000+01:00)
+apscheduler.scheduler@2664 Next wakeup is due at 2016-01-24 16:27:34.710000+01:00 (in 59.979000 seconds)
+apscheduler.executors.default@5524 Job "SimpleDevicePlugins.execute (trigger: interval[0:01:00], next run at: 2016-01-24 16:27:34 CET)" executed successfully
+apscheduler.scheduler@2664 Looking for jobs to run
+apscheduler.executors.default@5508 Running job "SimpleDevicePlugins.execute (trigger: interval[0:01:00], next run at: 2016-01-24 16:27:34 CET)" (scheduled at 2016-01-24 16:27:34.710000+01:00)
+apscheduler.executors.default@5508 Job "SimpleDevicePlugins.execute (trigger: interval[0:01:00], next run at: 2016-01-24 16:27:34 CET)" executed successfully
+apscheduler.scheduler@2664 Next wakeup is due at 2016-01-24 16:28:34.710000+01:00 (in 59.994000 seconds)
+PHAD@5580 Loading plugin: SimpleDevicePlugins
+apscheduler.scheduler@5580 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler@5580 Added job "SimpleDevicePlugins.execute" to job store "default"
+apscheduler.scheduler@5580 Scheduler started
+apscheduler.scheduler@5012 Looking for jobs to run
+apscheduler.scheduler@5012 Next wakeup is due at 2016-01-24 16:28:54.195000+01:00 (in 59.994000 seconds)
+PHAD@5400 Loading plugin: SimpleDevicePlugins
+apscheduler.scheduler@5400 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler@5400 Added job "SimpleDevicePlugins.execute" to job store "default"
+apscheduler.scheduler@5400 Scheduler started
+apscheduler.scheduler@2916 Looking for jobs to run
+apscheduler.scheduler@2916 Next wakeup is due at 2016-01-24 16:36:29.108000+01:00 (in 59.994000 seconds)
+apscheduler.scheduler@3292 Scheduler started
+apscheduler.scheduler@5692 Looking for jobs to run
+apscheduler.scheduler@5692 No jobs; waiting until a job is added
+PluginRegistry@1188 Loading plugin: SimpleDevicePlugins
+PluginRegistry@5040 Loading plugin: SimpleDevicePlugins
+DeviceRegistry@5040 Registering device: 1/1/1
+apscheduler.scheduler@5040 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler@5040 Added job "SimpleDevicePlugins.execute" to job store "default"
+apscheduler.scheduler@5040 Scheduler started
+apscheduler.scheduler@4076 Looking for jobs to run
+apscheduler.scheduler@4076 Next wakeup is due at 2016-01-24 16:42:29.110000+01:00 (in 59.974000 seconds)
+PluginRegistry@4816 Loading plugin: SimpleDevicePlugin
+DeviceRegistry@4816 Registering device: 1/1/1
+apscheduler.scheduler@4816 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler@4816 Added job "SimpleDevicePlugin.execute" to job store "default"
+apscheduler.scheduler@4816 Scheduler started
+apscheduler.scheduler@5720 Looking for jobs to run
+apscheduler.scheduler@5720 Next wakeup is due at 2016-01-24 16:43:22.112000+01:00 (in 59.993000 seconds)
+apscheduler.scheduler@5720 Looking for jobs to run
+apscheduler.executors.default@5324 Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 16:43:22 CET)" (scheduled at 2016-01-24 16:43:22.112000+01:00)
+apscheduler.executors.default@5324 Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 16:43:22 CET)" executed successfully
+apscheduler.scheduler@5720 Next wakeup is due at 2016-01-24 16:44:22.112000+01:00 (in 59.991000 seconds)
+1453650311.223000 PluginRegistry@4732 Loading plugin: SimpleDevicePlugin
+1453650311.223000 DeviceRegistry@4732 Registering device: 1/1/1
+1453650311.258000 apscheduler.scheduler@4732 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+1453650311.260000 apscheduler.scheduler@4732 Added job "SimpleDevicePlugin.execute" to job store "default"
+1453650311.261000 apscheduler.scheduler@4732 Scheduler started
+1453650311.262000 apscheduler.scheduler@4968 Looking for jobs to run
+1453650311.263000 apscheduler.scheduler@4968 Next wakeup is due at 2016-01-24 16:46:11.257000+01:00 (in 59.994000 seconds)
+2016-01-24 16:45:42,421 PluginRegistry@4760 Loading plugin: SimpleDevicePlugin
+2016-01-24 16:45:42,423 DeviceRegistry@4760 Registering device: 1/1/1
+2016-01-24 16:45:42,457 apscheduler.scheduler@4760 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2016-01-24 16:45:42,459 apscheduler.scheduler@4760 Added job "SimpleDevicePlugin.execute" to job store "default"
+2016-01-24 16:45:42,460 apscheduler.scheduler@4760 Scheduler started
+2016-01-24 16:45:42,460 apscheduler.scheduler@5600 Looking for jobs to run
+2016-01-24 16:45:42,461 apscheduler.scheduler@5600 Next wakeup is due at 2016-01-24 16:46:42.455000+01:00 (in 59.993000 seconds)
+2016-01-24 16:46:45,453 PluginRegistry@5716:
+ Loading plugin: SimpleDevicePlugin
+2016-01-24 16:46:45,453 DeviceRegistry@5716:
+ Registering device: 1/1/1
+2016-01-24 16:46:45,489 apscheduler.scheduler@5716:
+ Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2016-01-24 16:46:45,490 apscheduler.scheduler@5716:
+ Added job "SimpleDevicePlugin.execute" to job store "default"
+2016-01-24 16:46:45,492 apscheduler.scheduler@5716:
+ Scheduler started
+2016-01-24 16:46:45,493 apscheduler.scheduler@2560:
+ Looking for jobs to run
+2016-01-24 16:46:45,493 apscheduler.scheduler@2560:
+ Next wakeup is due at 2016-01-24 16:47:45.487000+01:00 (in 59.993000 seconds)
+2016-01-24 16:46:58,757 PluginRegistry@5952:
+ Loading plugin: SimpleDevicePlugin
+2016-01-24 16:46:58,757 DeviceRegistry@5952:
+ Registering device: 1/1/1
+2016-01-24 16:46:58,792 apscheduler.scheduler@5952:
+ Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2016-01-24 16:46:58,795 apscheduler.scheduler@5952:
+ Added job "SimpleDevicePlugin.execute" to job store "default"
+2016-01-24 16:46:58,795 apscheduler.scheduler@5952:
+ Scheduler started
+2016-01-24 16:46:58,796 apscheduler.scheduler@5176:
+ Looking for jobs to run
+2016-01-24 16:46:58,796 apscheduler.scheduler@5176:
+ Next wakeup is due at 2016-01-24 16:47:58.791000+01:00 (in 59.994000 seconds)
+2016-01-24 17:05:07,196 PluginRegistry@2216:
+ Loading plugin: SimpleDevicePlugin
+2016-01-24 17:05:10,388 DeviceRegistry@2216:
+ Registering device: 1/1/1
+2016-01-24 17:05:11,233 apscheduler.scheduler@2216:
+ Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2016-01-24 17:05:11,234 apscheduler.scheduler@2216:
+ Added job "SimpleDevicePlugin.execute" to job store "default"
+2016-01-24 17:05:11,234 apscheduler.scheduler@2216:
+ Scheduler started
+2016-01-24 17:05:11,236 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:05:11,237 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:06:11.231000+01:00 (in 59.993000 seconds)
+2016-01-24 17:06:11,230 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:06:11,233 apscheduler.executors.default@5040:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:07:11 CET)" (scheduled at 2016-01-24 17:06:11.231000+01:00)
+2016-01-24 17:06:11,233 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:07:11.231000+01:00 (in 60.000000 seconds)
+2016-01-24 17:06:11,236 apscheduler.executors.default@5040:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:07:11 CET)" executed successfully
+2016-01-24 17:07:11,236 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:07:11,236 apscheduler.executors.default@5040:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:07:11 CET)" (scheduled at 2016-01-24 17:07:11.231000+01:00)
+2016-01-24 17:07:11,237 apscheduler.executors.default@5040:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:07:11 CET)" executed successfully
+2016-01-24 17:07:11,266 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:08:11.231000+01:00 (in 59.994000 seconds)
+2016-01-24 17:08:11,260 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:08:11,263 apscheduler.executors.default@5040:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:08:11 CET)" (scheduled at 2016-01-24 17:08:11.231000+01:00)
+2016-01-24 17:08:11,265 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:09:11.231000+01:00 (in 59.970000 seconds)
+2016-01-24 17:08:11,265 apscheduler.executors.default@5040:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:09:11 CET)" executed successfully
+2016-01-24 17:09:11,236 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:09:11,239 apscheduler.executors.default@5168:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:10:11 CET)" (scheduled at 2016-01-24 17:09:11.231000+01:00)
+2016-01-24 17:09:11,240 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:10:11.231000+01:00 (in 59.994000 seconds)
+2016-01-24 17:09:11,240 apscheduler.executors.default@5168:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:10:11 CET)" executed successfully
+2016-01-24 17:10:11,240 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:10:11,240 apscheduler.executors.default@3336:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:10:11 CET)" (scheduled at 2016-01-24 17:10:11.231000+01:00)
+2016-01-24 17:10:11,243 apscheduler.executors.default@3336:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:10:11 CET)" executed successfully
+2016-01-24 17:10:11,246 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:11:11.231000+01:00 (in 59.991000 seconds)
+2016-01-24 17:11:11,236 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:11:11,239 apscheduler.executors.default@5040:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:12:11 CET)" (scheduled at 2016-01-24 17:11:11.231000+01:00)
+2016-01-24 17:11:11,240 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:12:11.231000+01:00 (in 59.994000 seconds)
+2016-01-24 17:11:11,240 apscheduler.executors.default@5040:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:12:11 CET)" executed successfully
+2016-01-24 17:12:11,236 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:12:11,237 apscheduler.executors.default@2884:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:12:11 CET)" (scheduled at 2016-01-24 17:12:11.231000+01:00)
+2016-01-24 17:12:11,240 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:13:11.231000+01:00 (in 59.995000 seconds)
+2016-01-24 17:12:11,240 apscheduler.executors.default@2884:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:13:11 CET)" executed successfully
+2016-01-24 17:13:11,236 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:13:11,239 apscheduler.executors.default@5168:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:13:11 CET)" (scheduled at 2016-01-24 17:13:11.231000+01:00)
+2016-01-24 17:13:11,240 apscheduler.executors.default@5168:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:13:11 CET)" executed successfully
+2016-01-24 17:13:11,240 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:14:11.231000+01:00 (in 59.994000 seconds)
+2016-01-24 17:14:11,236 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:14:11,237 apscheduler.executors.default@3336:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:15:11 CET)" (scheduled at 2016-01-24 17:14:11.231000+01:00)
+2016-01-24 17:14:11,239 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:15:11.231000+01:00 (in 59.995000 seconds)
+2016-01-24 17:14:11,240 apscheduler.executors.default@3336:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:15:11 CET)" executed successfully
+2016-01-24 17:15:11,236 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:15:11,237 apscheduler.executors.default@5260:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:15:11 CET)" (scheduled at 2016-01-24 17:15:11.231000+01:00)
+2016-01-24 17:15:11,239 apscheduler.executors.default@5260:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:15:11 CET)" executed successfully
+2016-01-24 17:15:11,240 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:16:11.231000+01:00 (in 59.995000 seconds)
+2016-01-24 17:16:11,236 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:16:11,237 apscheduler.executors.default@3104:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:17:11 CET)" (scheduled at 2016-01-24 17:16:11.231000+01:00)
+2016-01-24 17:16:11,237 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:17:11.231000+01:00 (in 59.995000 seconds)
+2016-01-24 17:16:11,239 apscheduler.executors.default@3104:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:17:11 CET)" executed successfully
+2016-01-24 17:17:11,243 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:17:11,243 apscheduler.executors.default@5040:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:17:11 CET)" (scheduled at 2016-01-24 17:17:11.231000+01:00)
+2016-01-24 17:17:11,244 apscheduler.executors.default@5040:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:17:11 CET)" executed successfully
+2016-01-24 17:17:11,246 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:18:11.231000+01:00 (in 59.988000 seconds)
+2016-01-24 17:18:11,250 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:18:11,255 apscheduler.executors.default@3292:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:18:11 CET)" (scheduled at 2016-01-24 17:18:11.231000+01:00)
+2016-01-24 17:18:11,256 apscheduler.executors.default@3292:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:18:11 CET)" executed successfully
+2016-01-24 17:18:11,257 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:19:11.231000+01:00 (in 59.981000 seconds)
+2016-01-24 17:19:11,243 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:19:11,250 apscheduler.executors.default@2884:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:20:11 CET)" (scheduled at 2016-01-24 17:19:11.231000+01:00)
+2016-01-24 17:19:11,250 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:20:11.231000+01:00 (in 59.985000 seconds)
+2016-01-24 17:19:11,253 apscheduler.executors.default@2884:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:20:11 CET)" executed successfully
+2016-01-24 17:20:11,243 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:20:11,244 apscheduler.executors.default@5168:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:21:11 CET)" (scheduled at 2016-01-24 17:20:11.231000+01:00)
+2016-01-24 17:20:11,244 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:21:11.231000+01:00 (in 59.987000 seconds)
+2016-01-24 17:20:11,246 apscheduler.executors.default@5168:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:21:11 CET)" executed successfully
+2016-01-24 17:21:11,236 apscheduler.scheduler@2864:
+ Looking for jobs to run
+2016-01-24 17:21:11,243 apscheduler.executors.default@5664:
+ Running job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:22:11 CET)" (scheduled at 2016-01-24 17:21:11.231000+01:00)
+2016-01-24 17:21:11,242 apscheduler.scheduler@2864:
+ Next wakeup is due at 2016-01-24 17:22:11.231000+01:00 (in 59.990000 seconds)
+2016-01-24 17:21:11,244 apscheduler.executors.default@5664:
+ Job "SimpleDevicePlugin.execute (trigger: interval[0:01:00], next run at: 2016-01-24 17:22:11 CET)" executed successfully

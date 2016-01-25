@@ -1,2 +1,12 @@
 eclipse.preferences.version=1
-encoding/<project>=UTF-8
+encoding//src/phad/dpt/dptXlator2ByteFloat.py=utf-8
+encoding//src/phad/dpt/dptXlator2ByteSigned.py=utf-8
+encoding//src/phad/dpt/dptXlator2ByteUnsigned.py=utf-8
+encoding//src/phad/dpt/dptXlator4ByteFloat.py=utf-8
+encoding//src/phad/dpt/dptXlator4ByteSigned.py=utf-8
+encoding//src/phad/dpt/dptXlator4ByteUnsigned.py=utf-8
+encoding//src/phad/dpt/dptXlator8BitUnsigned.py=utf-8
+encoding//src/phad/dpt/dptXlatorScene.py=utf-8
+encoding//src/phad/dpt/dptXlatorString.py=utf-8
+encoding//src/phad/dpt/dptXlatorTime.py=utf-8
+encoding//src/phad/dpt/dptvalues.py=utf-8

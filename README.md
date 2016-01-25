@@ -1,2 +1,2 @@
 # PHAD
-Perl Home Automation Daemon
+Python Home Automation Daemon
